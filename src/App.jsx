@@ -1,7 +1,11 @@
+import Count from "./Count";
+import { ProviderContext } from "./hooks/CountContext";
 function App() {
   return (
     <div>
-      <h1 className="bg-red-500">OLA MUNDO</h1>
+      <ProviderContext>
+        <Count />
+      </ProviderContext>
     </div>
   );
 }
